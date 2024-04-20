@@ -51,7 +51,7 @@ The project evaluates the fairness and performance of the binary classification 
 1. Clone the repository: `git clone https://github.com/Abdullah-Tauqeer01/Fairness-Project.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Download the embedding and csv data from this link: "https://drive.google.com/drive/folders/1uQiCY41178LY_9tm1mFD9yQZ4o5A-wCi?usp=drive_link"
-4.Paste data in data directory
+4. Create a Data directory and paste data in it.
 5. Update the file paths and configurations in the code to point to the correct locations of the dataset files.
 6.Run fairness.py to get result of FPR and AUC for all data before data augumentation
 7. Run the main script: `python main.py`
