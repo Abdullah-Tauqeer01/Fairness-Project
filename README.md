@@ -48,16 +48,15 @@ The project evaluates the fairness and performance of the binary classification 
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/Abdullah-Tauqeer01/Fairness-Project.git`
-2. Install the required dependencies: `pip install -r requirements.txt`
-3. Download the embedding and csv data from this link: "https://drive.google.com/drive/folders/1uQiCY41178LY_9tm1mFD9yQZ4o5A-wCi?usp=drive_link"
-4. Create a Data directory and paste data in it.
-5. Update the file paths and configurations in the code to point to the correct locations of the dataset files.
-6.Run fairness.py to get result of FPR and AUC for all data before data augumentation
-7. Run the main script: `python main.py`
-8.Use cgan.ipynb to genrate the embeddings
-9.Use synthesized data fro classification using fairness.py
-
+1. Begin by cloning the repository: `git clone https://github.com/Abdullah-Tauqeer01/Fairness-Project.git`.
+2. Install the necessary dependencies by executing: `pip install -r requirements.txt`.
+3. Download the embedding and CSV data from the following link: [Data Link](https://drive.google.com/drive/folders/1uQiCY41178LY_9tm1mFD9yQZ4o5A-wCi?usp=drive_link).
+4. Create a directory named "Data" and place the downloaded data into it.
+5. Update the file paths and configurations within the code to correctly reference the locations of the dataset files.
+6. Run the `fairness.py` script to obtain the results of False Positive Rate (FPR) and Area Under the Curve (AUC) for all data before data augmentation.
+7. Execute the main script by running: `python main.py`.
+8. Utilize `cgan.ipynb` to generate the embeddings.
+9. Employ the synthesized data for classification purposes using `fairness.py`.
 
 ## Acknowledgments
 
