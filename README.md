@@ -22,11 +22,13 @@ The project uses the MIMIC-CXR dataset, which consists of chest radiographs and 
 
 ## Evaluation Methods
 
-Two evaluation methods are employed to assess fairness and performance:
+The project evaluates the fairness and performance of the binary classification models using the following metrics:
 
-1. **True Positive Rate (TPR) Disparity**: The Difference between the maximum and minimum value of the marginal overall Area Under the receiver operating characteristic Curve (∆mAUC) is minimized to reduce disparities in predictive performance across subgroups.
+1. **False Positive Rate (FPR) Disparity**: The FPR is calculated for each protected group (race) using the `calculate_fpr` function. The FPR disparity across different protected groups is reported to assess the fairness of the model's predictions.
 
-2. **Maximizing Performance for the Worst-Performing Subgroup**: The differences between the maximum and minimum values of traditional evaluation metrics, such as TPR, false negative rate (FNR), and Brier scores (∆TPR, ∆FNR, and ∆BS), are minimized to ensure adequate performance for the worst-performing subgroup.
+2. **Training Accuracy**: The overall training accuracy of the binary classification model is reported for both the balanced and unbalanced datasets.
+
+3. **Area Under the Curve (AUC)**: The AUC is calculated for each protected group using the `calculate_auc_fpr` function. The AUC disparity across different protected groups is reported as an additional fairness metric.
 
 ## Files
 
